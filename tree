@@ -1,0 +1,35 @@
+digraph {
+	outlook
+	humidity
+	outlook
+	yes
+	outlook
+	wind
+	humidity
+	no
+	humidity
+	yes
+	wind
+	humidity
+	wind
+	no
+	humidity
+	wind
+	humidity
+	yes
+	wind
+	yes
+	wind
+	null
+	outlook -> humidity [label=sunny]
+	outlook -> yes [label=overcast]
+	outlook -> wind [label=rain]
+	humidity -> no [label=high]
+	humidity -> yes [label=normal]
+	wind -> humidity [label=false]
+	wind -> no [label=true]
+	humidity -> wind [label=high]
+	humidity -> yes [label=normal]
+	wind -> yes [label=false]
+	wind -> null [label=true]
+}

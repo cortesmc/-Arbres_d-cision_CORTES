@@ -1,0 +1,471 @@
+digraph {
+	graph [nodesep=1 rankdir=TB ranksep=1]
+	"leafspot-size"
+	"stem-cankers"
+	"leafspot-size" -> "stem-cankers" [label=dna]
+	"leafspot-size"
+	"canker-lesion"
+	"leafspot-size" -> "canker-lesion" [label="gt-1/8"]
+	"leafspot-size"
+	"canker-lesion"
+	"leafspot-size" -> "canker-lesion" [label="lt-1/8"]
+	"stem-cankers"
+	"fruit-spots"
+	"stem-cankers" -> "fruit-spots" [label="above-sec-nde"]
+	"stem-cankers"
+	"canker-lesion"
+	"stem-cankers" -> "canker-lesion" [label="below-soil"]
+	"stem-cankers"
+	"fruit-pods"
+	"stem-cankers" -> "fruit-pods" [label="above-soil"]
+	"stem-cankers"
+	"int-discolor"
+	"stem-cankers" -> "int-discolor" [label=absent]
+	"canker-lesion"
+	"external-decay"
+	"canker-lesion" -> "external-decay" [label=brown]
+	"canker-lesion"
+	date
+	"canker-lesion" -> date [label=dna]
+	"canker-lesion"
+	"frog-eye-leaf-spot"
+	"canker-lesion" -> "frog-eye-leaf-spot" [label="dk-brown-blk"]
+	"canker-lesion"
+	"plant-growth"
+	"canker-lesion" -> "plant-growth" [label=tan]
+	"canker-lesion"
+	null
+	"canker-lesion" -> null [label=brown]
+	"canker-lesion"
+	"leafspots-marg"
+	"canker-lesion" -> "leafspots-marg" [label=dna]
+	"canker-lesion"
+	null
+	"canker-lesion" -> null [label="dk-brown-blk"]
+	"canker-lesion"
+	"purple-seed-stain"
+	"canker-lesion" -> "purple-seed-stain" [label=tan]
+	"fruit-spots"
+	"diaporthe-stem-canker"
+	"fruit-spots" -> "diaporthe-stem-canker" [label=dna]
+	"fruit-spots"
+	anthracnose
+	"fruit-spots" -> anthracnose [label=absent]
+	"fruit-spots"
+	null
+	"fruit-spots" -> null [label=colored]
+	"fruit-spots"
+	anthracnose
+	"fruit-spots" -> anthracnose [label="brown-w/blk-specks"]
+	"canker-lesion"
+	"rhizoctonia-root-rot"
+	"canker-lesion" -> "rhizoctonia-root-rot" [label=brown]
+	"canker-lesion"
+	null
+	"canker-lesion" -> null [label=dna]
+	"canker-lesion"
+	"phytophthora-rot"
+	"canker-lesion" -> "phytophthora-rot" [label="dk-brown-blk"]
+	"canker-lesion"
+	null
+	"canker-lesion" -> null [label=tan]
+	"fruit-pods"
+	anthracnose
+	"fruit-pods" -> anthracnose [label=norm]
+	"fruit-pods"
+	"phytophthora-rot"
+	"fruit-pods" -> "phytophthora-rot" [label=dna]
+	"fruit-pods"
+	null
+	"fruit-pods" -> null [label=diseased]
+	"int-discolor"
+	leaves
+	"int-discolor" -> leaves [label=none]
+	"int-discolor"
+	"charcoal-rot"
+	"int-discolor" -> "charcoal-rot" [label=black]
+	"int-discolor"
+	"brown-stem-rot"
+	"int-discolor" -> "brown-stem-rot" [label=brown]
+	"external-decay"
+	"frog-eye-leaf-spot"
+	"external-decay" -> "frog-eye-leaf-spot" [label="firm-and-dry"]
+	"external-decay"
+	"brown-spot"
+	"external-decay" -> "brown-spot" [label=absent]
+	date
+	"leaf-mild"
+	date -> "leaf-mild" [label=august]
+	date
+	"leaf-malf"
+	date -> "leaf-malf" [label=october]
+	date
+	"leafspots-halo"
+	date -> "leafspots-halo" [label=september]
+	date
+	precip
+	date -> precip [label=july]
+	date
+	"leafspots-halo"
+	date -> "leafspots-halo" [label=may]
+	date
+	"brown-spot"
+	date -> "brown-spot" [label=april]
+	date
+	precip
+	date -> precip [label=june]
+	"plant-growth"
+	"brown-stem-rot"
+	"plant-growth" -> "brown-stem-rot" [label=abnorm]
+	"plant-growth"
+	"brown-spot"
+	"plant-growth" -> "brown-spot" [label=norm]
+	"leafspots-marg"
+	null
+	"leafspots-marg" -> null [label=dna]
+	"leafspots-marg"
+	"crop-hist"
+	"leafspots-marg" -> "crop-hist" [label="w-s-marg"]
+	"leafspots-marg"
+	"bacterial-pustule"
+	"leafspots-marg" -> "bacterial-pustule" [label="no-w-s-marg"]
+	leaves
+	"powdery-mildew"
+	leaves -> "powdery-mildew" [label=abnorm]
+	leaves
+	"purple-seed-stain"
+	leaves -> "purple-seed-stain" [label=norm]
+	"leaf-mild"
+	"leaf-malf"
+	"leaf-mild" -> "leaf-malf" [label=absent]
+	"leaf-mild"
+	"downy-mildew"
+	"leaf-mild" -> "downy-mildew" [label="lower-surf"]
+	"leaf-mild"
+	null
+	"leaf-mild" -> null [label="upper-surf"]
+	"leaf-malf"
+	"alternarialeaf-spot"
+	"leaf-malf" -> "alternarialeaf-spot" [label=absent]
+	"leaf-malf"
+	"downy-mildew"
+	"leaf-malf" -> "downy-mildew" [label=present]
+	"leafspots-halo"
+	null
+	"leafspots-halo" -> null [label=absent]
+	"leafspots-halo"
+	temp
+	"leafspots-halo" -> temp [label="no-yellow-halos"]
+	"leafspots-halo"
+	"downy-mildew"
+	"leafspots-halo" -> "downy-mildew" [label="yellow-halos"]
+	precip
+	"area-damaged"
+	precip -> "area-damaged" [label="gt-norm"]
+	precip
+	"phyllosticta-leaf-spot"
+	precip -> "phyllosticta-leaf-spot" [label=norm]
+	precip
+	"phyllosticta-leaf-spot"
+	precip -> "phyllosticta-leaf-spot" [label="lt-norm"]
+	"leafspots-halo"
+	null
+	"leafspots-halo" -> null [label=absent]
+	"leafspots-halo"
+	precip
+	"leafspots-halo" -> precip [label="no-yellow-halos"]
+	"leafspots-halo"
+	"downy-mildew"
+	"leafspots-halo" -> "downy-mildew" [label="yellow-halos"]
+	precip
+	"leaf-mild"
+	precip -> "leaf-mild" [label="gt-norm"]
+	precip
+	hail
+	precip -> hail [label=norm]
+	precip
+	"phyllosticta-leaf-spot"
+	precip -> "phyllosticta-leaf-spot" [label="lt-norm"]
+	"crop-hist"
+	"bacterial-blight"
+	"crop-hist" -> "bacterial-blight" [label="same-lst-two-yrs"]
+	"crop-hist"
+	"bacterial-blight"
+	"crop-hist" -> "bacterial-blight" [label="same-lst-yr"]
+	"crop-hist"
+	germination
+	"crop-hist" -> germination [label="same-lst-sev-yrs"]
+	"crop-hist"
+	"bacterial-blight"
+	"crop-hist" -> "bacterial-blight" [label="diff-lst-year"]
+	"leaf-malf"
+	hail
+	"leaf-malf" -> hail [label=absent]
+	"leaf-malf"
+	"phyllosticta-leaf-spot"
+	"leaf-malf" -> "phyllosticta-leaf-spot" [label=present]
+	temp
+	"crop-hist"
+	temp -> "crop-hist" [label=norm]
+	temp
+	null
+	temp -> null [label="lt-norm"]
+	temp
+	"alternarialeaf-spot"
+	temp -> "alternarialeaf-spot" [label="gt-norm"]
+	"area-damaged"
+	germination
+	"area-damaged" -> germination [label=scattered]
+	"area-damaged"
+	"crop-hist"
+	"area-damaged" -> "crop-hist" [label="low-areas"]
+	"area-damaged"
+	"brown-spot"
+	"area-damaged" -> "brown-spot" [label="whole-field"]
+	"area-damaged"
+	"frog-eye-leaf-spot"
+	"area-damaged" -> "frog-eye-leaf-spot" [label="upper-areas"]
+	precip
+	"area-damaged"
+	precip -> "area-damaged" [label="gt-norm"]
+	precip
+	null
+	precip -> null [label=norm]
+	precip
+	null
+	precip -> null [label="lt-norm"]
+	"leaf-mild"
+	"brown-spot"
+	"leaf-mild" -> "brown-spot" [label=absent]
+	"leaf-mild"
+	"downy-mildew"
+	"leaf-mild" -> "downy-mildew" [label="lower-surf"]
+	"leaf-mild"
+	null
+	"leaf-mild" -> null [label="upper-surf"]
+	hail
+	"phyllosticta-leaf-spot"
+	hail -> "phyllosticta-leaf-spot" [label=yes]
+	hail
+	"brown-spot"
+	hail -> "brown-spot" [label=no]
+	germination
+	"bacterial-pustule"
+	germination -> "bacterial-pustule" [label="80-89"]
+	germination
+	"bacterial-pustule"
+	germination -> "bacterial-pustule" [label="lt-80"]
+	germination
+	"bacterial-blight"
+	germination -> "bacterial-blight" [label="90-100"]
+	hail
+	"seed-tmt"
+	hail -> "seed-tmt" [label=yes]
+	hail
+	"frog-eye-leaf-spot"
+	hail -> "frog-eye-leaf-spot" [label=no]
+	"crop-hist"
+	"alternarialeaf-spot"
+	"crop-hist" -> "alternarialeaf-spot" [label="same-lst-two-yrs"]
+	"crop-hist"
+	hail
+	"crop-hist" -> hail [label="same-lst-yr"]
+	"crop-hist"
+	"plant-stand"
+	"crop-hist" -> "plant-stand" [label="same-lst-sev-yrs"]
+	"crop-hist"
+	precip
+	"crop-hist" -> precip [label="diff-lst-year"]
+	germination
+	"crop-hist"
+	germination -> "crop-hist" [label="80-89"]
+	germination
+	"frog-eye-leaf-spot"
+	germination -> "frog-eye-leaf-spot" [label="lt-80"]
+	germination
+	"alternarialeaf-spot"
+	germination -> "alternarialeaf-spot" [label="90-100"]
+	"crop-hist"
+	"alternarialeaf-spot"
+	"crop-hist" -> "alternarialeaf-spot" [label="same-lst-two-yrs"]
+	"crop-hist"
+	"downy-mildew"
+	"crop-hist" -> "downy-mildew" [label="same-lst-yr"]
+	"crop-hist"
+	"brown-spot"
+	"crop-hist" -> "brown-spot" [label="same-lst-sev-yrs"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="diff-lst-year"]
+	"area-damaged"
+	null
+	"area-damaged" -> null [label=scattered]
+	"area-damaged"
+	"crop-hist"
+	"area-damaged" -> "crop-hist" [label="low-areas"]
+	"area-damaged"
+	null
+	"area-damaged" -> null [label="whole-field"]
+	"area-damaged"
+	null
+	"area-damaged" -> null [label="upper-areas"]
+	"seed-tmt"
+	"area-damaged"
+	"seed-tmt" -> "area-damaged" [label=fungicide]
+	"seed-tmt"
+	"area-damaged"
+	"seed-tmt" -> "area-damaged" [label=none]
+	"seed-tmt"
+	"frog-eye-leaf-spot"
+	"seed-tmt" -> "frog-eye-leaf-spot" [label=other]
+	hail
+	"seed-tmt"
+	hail -> "seed-tmt" [label=yes]
+	hail
+	null
+	hail -> null [label=no]
+	"plant-stand"
+	"alternarialeaf-spot"
+	"plant-stand" -> "alternarialeaf-spot" [label=normal]
+	"plant-stand"
+	"frog-eye-leaf-spot"
+	"plant-stand" -> "frog-eye-leaf-spot" [label="lt-normal"]
+	precip
+	"alternarialeaf-spot"
+	precip -> "alternarialeaf-spot" [label="gt-norm"]
+	precip
+	"frog-eye-leaf-spot"
+	precip -> "frog-eye-leaf-spot" [label=norm]
+	precip
+	null
+	precip -> null [label="lt-norm"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="same-lst-two-yrs"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="same-lst-yr"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="same-lst-sev-yrs"]
+	"crop-hist"
+	precip
+	"crop-hist" -> precip [label="diff-lst-year"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="same-lst-two-yrs"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="same-lst-yr"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="same-lst-sev-yrs"]
+	"crop-hist"
+	precip
+	"crop-hist" -> precip [label="diff-lst-year"]
+	"area-damaged"
+	"alternarialeaf-spot"
+	"area-damaged" -> "alternarialeaf-spot" [label=scattered]
+	"area-damaged"
+	"crop-hist"
+	"area-damaged" -> "crop-hist" [label="low-areas"]
+	"area-damaged"
+	"frog-eye-leaf-spot"
+	"area-damaged" -> "frog-eye-leaf-spot" [label="whole-field"]
+	"area-damaged"
+	null
+	"area-damaged" -> null [label="upper-areas"]
+	"area-damaged"
+	"plant-stand"
+	"area-damaged" -> "plant-stand" [label=scattered]
+	"area-damaged"
+	"alternarialeaf-spot"
+	"area-damaged" -> "alternarialeaf-spot" [label="low-areas"]
+	"area-damaged"
+	"alternarialeaf-spot"
+	"area-damaged" -> "alternarialeaf-spot" [label="whole-field"]
+	"area-damaged"
+	"crop-hist"
+	"area-damaged" -> "crop-hist" [label="upper-areas"]
+	"seed-tmt"
+	null
+	"seed-tmt" -> null [label=fungicide]
+	"seed-tmt"
+	"area-damaged"
+	"seed-tmt" -> "area-damaged" [label=none]
+	"seed-tmt"
+	null
+	"seed-tmt" -> null [label=other]
+	precip
+	"frog-eye-leaf-spot"
+	precip -> "frog-eye-leaf-spot" [label="gt-norm"]
+	precip
+	null
+	precip -> null [label=norm]
+	precip
+	null
+	precip -> null [label="lt-norm"]
+	precip
+	null
+	precip -> null [label="gt-norm"]
+	precip
+	null
+	precip -> null [label=norm]
+	precip
+	null
+	precip -> null [label="lt-norm"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="same-lst-two-yrs"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="same-lst-yr"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="same-lst-sev-yrs"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="diff-lst-year"]
+	"plant-stand"
+	"alternarialeaf-spot"
+	"plant-stand" -> "alternarialeaf-spot" [label=normal]
+	"plant-stand"
+	"frog-eye-leaf-spot"
+	"plant-stand" -> "frog-eye-leaf-spot" [label="lt-normal"]
+	"crop-hist"
+	"alternarialeaf-spot"
+	"crop-hist" -> "alternarialeaf-spot" [label="same-lst-two-yrs"]
+	"crop-hist"
+	"frog-eye-leaf-spot"
+	"crop-hist" -> "frog-eye-leaf-spot" [label="same-lst-yr"]
+	"crop-hist"
+	"alternarialeaf-spot"
+	"crop-hist" -> "alternarialeaf-spot" [label="same-lst-sev-yrs"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="diff-lst-year"]
+	"area-damaged"
+	null
+	"area-damaged" -> null [label=scattered]
+	"area-damaged"
+	null
+	"area-damaged" -> null [label="low-areas"]
+	"area-damaged"
+	null
+	"area-damaged" -> null [label="whole-field"]
+	"area-damaged"
+	"crop-hist"
+	"area-damaged" -> "crop-hist" [label="upper-areas"]
+	"crop-hist"
+	"alternarialeaf-spot"
+	"crop-hist" -> "alternarialeaf-spot" [label="same-lst-two-yrs"]
+	"crop-hist"
+	"frog-eye-leaf-spot"
+	"crop-hist" -> "frog-eye-leaf-spot" [label="same-lst-yr"]
+	"crop-hist"
+	"alternarialeaf-spot"
+	"crop-hist" -> "alternarialeaf-spot" [label="same-lst-sev-yrs"]
+	"crop-hist"
+	null
+	"crop-hist" -> null [label="diff-lst-year"]
+}
