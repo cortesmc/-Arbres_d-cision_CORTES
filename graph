@@ -1,5 +1,4 @@
 digraph {
-	graph [nodesep=1 rankdir=TB ranksep=1]
 	"leafspot-size"
 	"stem-cankers"
 	"leafspot-size" -> "stem-cankers" [label=dna]

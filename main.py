@@ -6,7 +6,6 @@ Arbres de décision - ID3
 
 import csv
 import math
-import pandas as pd
 import graphviz
 from sklearn.metrics import confusion_matrix
 from src.Class_arbre import *
@@ -22,7 +21,6 @@ if __name__ == "__main__":
     data_app = []
     data_pred = []
     with open("./soybean-app.csv", 'r') as file:
-    #with open("./golf.csv", 'r') as file:
         csvreader = csv.reader(file, delimiter=',')
         for row in csvreader:
             data_app.append(row)
@@ -33,7 +31,8 @@ if __name__ == "__main__":
             data_pred.append(row)
          
     data_apprentisage = data_app #Ici on peut sélectionner le nom du jeu de données générer l’arbre de décision.
-    
+    data_prediction = data_pred #Ici on peut sélectionner le nom du jeu de données pour trouver et afficher la matrice de confusion.
+
     calc = Class_math(data_apprentisage)  
     '''
     Nettoyage des données par l'élimination des toutes les lignes qu’ont des données 
@@ -63,7 +62,7 @@ if __name__ == "__main__":
     arc_weight = list_arc_copy[0].getWeight()
     
     '''
-    Boucle de création de l’arbre on utilise un copie de la list des arc qu’on utilise un 
+    Boucle de création de l’arbre on utilise un copie de la list des arc qu’on utilise en 
     itération de type FIFO pour générer l’arbre:
         1. Définir les jeux des données dans lesquels on va prendre les mesures de gain.
         
@@ -121,7 +120,6 @@ if __name__ == "__main__":
     On utilise la matrice génère pour les afficher comme une image
 
     '''
-    data_prediction = data_app #Ici on peut sélectionner le nom du jeu de données pour trouver et afficher la matrice de confusion.
     
     pred = class_Prediction(data_prediction)
     

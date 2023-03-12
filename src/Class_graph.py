@@ -19,10 +19,7 @@ class graph:
         None.
 
         '''
-        dot = graphviz.Digraph()
-        dot.graph_attr['rankdir'] = 'TB'
-        dot.graph_attr['nodesep'] = '1'
-        dot.graph_attr['ranksep'] = '1'        
+        dot = graphviz.Digraph()    
         for arc in self.list_graph:
             dot.node(arc.getFather().getValue())
             dot.node(arc.getSon().getValue())
